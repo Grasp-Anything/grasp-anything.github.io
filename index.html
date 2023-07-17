@@ -52,7 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://https://arxiv.org/abs/2306.05716">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -62,7 +62,7 @@
         <a class="navbar-link">
           More Research
         </a>
-        <div class="navbar-dropdown">
+        <!-- <div class="navbar-dropdown">
           <a class="navbar-item" href="https://hypernerf.github.io">
             HyperNeRF
           </a>
@@ -74,7 +74,7 @@
           </a>
           <a class="navbar-item" href="https://photoshape.github.io">
             PhotoShape
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -91,23 +91,23 @@
           <h1 class="title is-1 publication-title">Pave the Way to Grasp Anything: Transferring Foundation Models for Universal Pick-Place Robots </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Jiange Yang</a><sup>1 *</sup>,</span>
+              <a href="https://yangjiangeyjg.github.io/">Jiange Yang</a><sup>1 *</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Wenhui Tan</a><sup>2 *</sup>,</span>
+              <a href="https://alberttan404.github.io/">Wenhui Tan</a><sup>2 *</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Chuhao Jin</a><sup>2 *</sup>,
+              <a href="https://chuhaojin.github.io/">Chuhao Jin</a><sup>2 *</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Bei Liu</a><sup>3 +</sup>,
+              <a href="https://bei21.github.io/">Bei Liu</a><sup>3 +</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Jianlong Fu</a><sup>3 ^</sup>,
+              <a href="https://jianlong-fu.github.io/">Jianlong Fu</a><sup>3 ^</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Ruihua Song</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=v5LctN8AAAAJ&hl=en&oi=ao">Ruihua Song</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Limin Wang</a><sup>1 +</sup>
+              <a href="https://scholar.google.com/citations?hl=en&user=HEuN8PcAAAAJ">Limin Wang</a><sup>1 +</sup>
             </span>
           </div>
 
@@ -124,7 +124,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/2306.05716.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -133,7 +133,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2306.05716"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -143,7 +143,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href="https://www.youtube.com/watch?v=1m9wNzfp_4E"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -151,7 +151,7 @@
                   <span>Video</span>
                 </a>
               </span>
-              <!-- Code Link. -->
+              <!-- Code Link.
               <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
@@ -161,7 +161,7 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
+              Dataset Link.
               <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
@@ -169,7 +169,8 @@
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
+              <div>Code will be published soon.</div>
             </div>
 
           </div>
@@ -184,7 +185,7 @@
     <div class="hero-body">
       <img src="./static/images/teaser.jpg"
                  class="interpolation-image"
-                 alt="Interpolate start reference image."/>
+                 alt=""/>
       <h2 class="subtitle has-text-centered">
         A demonstration of our task. Receiving human instruction “I want to take a shower”, our model can reason out the desired object (i.e., the towel), then precisely pick and place it near the target object (i.e., the user represented by a Lego toy).  </h2>
     </div>
@@ -216,6 +217,38 @@
       </div>
     </div>
     <!--/ Paper video. -->
+
+
+
+    <!-- Model. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Model</h2>
+          <img src="./static/images/model.jpg"
+          class="interpolation-image"
+          alt=""/>
+          <div class="content has-text-justified">
+            <p>
+              Our model comprises four components: (1) GPT-4 interprets objects for pick-and-place tasks based on human instructions and observations. (2) A multi-modal prompt generator, comprising object detection and tracking models, transforms input images and object tags into accurate bounding box trajectories. (3) The Segment Anything model, which uses bounding boxes to segment objects and generate task-focused masks for pick-and-place positions. (4) A tunable Multi-modal Multi-view Policy Model that processes images, segmentation masks, and robot proprioception to determine grasping actions. Purple and black arrows represent cognition and control dataflow, respectively.  </div>         
+      </div>
+    </div>
+    <!--/ Model. -->
+
+
+
+
+    <!-- Dataset. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset: DailyGrasp</h2>
+          <img src="./static/images/experiment_settings.jpg"
+          class="interpolation-image"
+          alt=""/>
+          <div class="content has-text-justified">
+            <p>
+              (a): Overview of our workstation, which has a robotic arm, a frontal view camera, and a lateral view camera. (b): All the 26 seen objects. (c): All the 22 unseen objects. (d): A challenging background with complex texture for new background evaluation.  </div>
+    </div>
+    <!--/ Model. -->
   </div>
 </section>
 
